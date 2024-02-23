@@ -18,6 +18,7 @@ website_label = Label(text="Website:")
 website_label.grid(column=0,row=1)
 
 website_entry = Entry(width=40)
+website_entry.focus()
 website_entry.grid(column=1,row=1,columnspan=2)
 
 
@@ -25,6 +26,7 @@ email_label = Label(text="Email/Username:")
 email_label.grid(column=0,row=2)
 
 email_entry = Entry(width=40)
+email_entry.insert(0,"youremail@email.com")
 email_entry.grid(column=1,row=2,columnspan=2)
 
 password_label = Label(text="Password:")
