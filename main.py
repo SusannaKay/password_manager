@@ -14,12 +14,8 @@ def gen_psw():
     password_list += [ choice(symbols) for char in range(randint(2,4))]
     password_list += [ choice(numbers) for char in range(randint(2,4))]
 
-    
-    
     password = "".join(password_list)
-    print(password)
-
-    return password
+    password_entry.insert(0,password)
 # ---------------------------- SAVE PASSWORD ------------------------------- #
 
 def save_to_txt():
